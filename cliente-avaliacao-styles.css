@@ -1,0 +1,392 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f7fa;
+    display: flex;
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.logo-container h2 {
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    padding: 12px 16px;
+    color: #6B7280;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    background: #F3F4F6;
+    color: #3B82F6;
+}
+
+.nav-item.active {
+    background: #EFF6FF;
+    color: #3B82F6;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    flex: 1;
+    padding: 30px 40px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Category Cards */
+.category-cards {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.category-card {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: #3b82f6;
+}
+
+.category-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+/* Report Section */
+.report-section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.report-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.report-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    flex: 1;
+    line-height: 1.4;
+}
+
+.report-icon {
+    flex-shrink: 0;
+}
+
+.report-subtitle {
+    font-size: 12px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* Member Card */
+.member-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.member-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.member-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.member-score {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.member-subtitle {
+    font-size: 11px;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+/* Progress Item */
+.progress-item {
+    margin-bottom: 12px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.progress-label span:first-child {
+    font-size: 11px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.progress-percentage {
+    font-size: 11px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.progress-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.progress-value {
+    font-size: 11px;
+    color: #6b7280;
+    text-align: right;
+}
+
+/* Report Footer */
+.report-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-icon {
+    flex-shrink: 0;
+}
+
+.footer-text {
+    font-size: 11px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #d1d9e0;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 8px;
+    }
+    
+    .nav-item {
+        white-space: nowrap;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .page-title {
+        font-size: 22px;
+    }
+    
+    .category-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .category-card {
+        padding: 20px 30px;
+    }
+    
+    .report-section {
+        padding: 20px;
+    }
+    
+    .report-title {
+        font-size: 16px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .category-card h3 {
+        font-size: 16px;
+    }
+    
+    .member-card {
+        padding: 15px;
+    }
+    
+    .report-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* User Profile - Uniforme */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.user-profile span {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Logout Dropdown - Uniforme */
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.logout-dropdown.show {
+    display: block;
+}
+
+.logout-link {
+    display: block;
+    padding: 12px 16px;
+    color: #EF4444;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.logout-link:hover {
+    background: #FEF2F2;
+}
